@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Domnine';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.bg-img {
+    background: url('https://images.unsplash.com/photo-1574724713425-fee7e2eacf84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2026&q=80') no-repeat center center;
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    /* display: block; */
+    width: calc(100vw + 80px); /*add 2x the number you remove from width ie left */
+    height: calc(100vh + 80px); /*add 2x the number you remove from height ie top */
+    z-index: -1; /*this is to put the image behind the text, the Z index is used to place objects in different planes*/
+    filter: blur(50px);
+}
+
+.bg-text{
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* imaghe from https://images.unsplash.com/photo-1574724713425-fee7e2eacf84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2026&q=80   */
+
